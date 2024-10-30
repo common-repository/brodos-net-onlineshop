@@ -1,0 +1,86 @@
+.hide {
+    display: none;
+}
+.readonly {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.wrap img {
+    max-width: 100%;
+}
+input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea {
+    min-width: 500px;
+}
+.shortcodeDisplay {
+    max-width: 1000px;
+    position: relative;
+}
+.wp-core-ui .button.shortcodeCopyButton {
+    user-select: none;
+}
+.wp-core-ui .shortcodeDisplay .button.shortcodeCopyButton {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+.shortcodeDisplay code {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em 5em 0.5em 1em;
+    font-size: 14px;
+}
+.articlePreviewDisplay {
+    width: 215px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    font-size: 14px;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.articlePreviewDisplay a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+.articlePreviewDisplay img {
+    display: block;
+    margin-bottom: 15px;
+}
+.articlePreviewDisplay .price {
+    font-weight: bold;
+    color: #000;
+}
+@media only screen and (max-width:1000px) {
+    input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea {
+        min-width: 450px;
+    }
+    .shortcodeDisplay {
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 960px) {
+    input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea {
+        min-width: 400px;
+    }
+}
+@media screen and (max-width: 782px) {
+    .wp-core-ui .button.shortcodeCopyButton {
+        margin: 8px 0 16px;
+    }
+    .wp-core-ui .shortcodeDisplay .button.shortcodeCopyButton {
+        position: static;
+    }
+    .onlineshopPage br+br {
+        display: none;
+    }
+    input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea {
+        min-width: unset;
+    }
+    .shortcodeDisplay code {
+        padding: 0.5em;
+        word-break: break-all;
+    }
+}

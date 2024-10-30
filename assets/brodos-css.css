@@ -1,0 +1,407 @@
+.BrodosCart a {
+    border: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 15px;
+    opacity: 1;
+    position: relative;
+    text-decoration: none;
+}
+
+.BrodosCart .BrodosCartLink:after {
+    content: attr(data-count);
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: -2px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 4px;
+    font-size: 13px;
+    font-weight: 500;
+    display: block;
+    line-height: 20px;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.BrodosCart .BrodosCartLink.showCount:after {
+    opacity: 1;
+}
+
+.BrodosWPCartCount {
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: -7px;
+    left: 18px;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 4px;
+    font-size: 13px;
+    font-weight: 500;
+    display: block;
+    line-height: 20px;
+}
+
+.BrodosCart svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    height: 40px;
+    width: 40px;
+}
+
+.BrodosCart span {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.BrodosCartText small {
+    font-size: 13px;
+}
+
+.brodosCatButton,
+.brodosSearchGroupButton,
+.BrodosArticleButton {
+    font-size: 16px;
+    padding: 12px 24px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1.4;
+    background-color: #818a91;
+    color: #fff;
+    text-align: center;
+}
+
+.brodosCatButton:hover,
+.brodosSearchGroupButton:hover,
+.BrodosArticleButton:hover {
+    color: #fff;
+}
+
+.BrodosCart {
+    text-align: right;
+    padding: 0 10px;
+}
+
+.BrodosCart.BrodosNewsletter {
+    text-align: center;
+    padding: 0 10px;
+}
+
+.BrodosCart a {
+    text-align: left;
+}
+
+.brodos-social-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 1;
+    margin: 0;
+    gap: 12px;
+}
+
+div[data-elementor-type="footer"] .brodos-social-menu ul {
+    justify-content: flex-start;
+}
+
+.brodos-social-menu li {
+    margin: 0;
+}
+
+
+/*
+The CSS below is for the hero banner.
+*/
+.brodos-hero-banner-top-wrap {
+    border-radius: 22px 22px 0px 0px;
+    height: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    overflow: hidden;
+}
+
+.brodos-hero-banner-top-right-wrapper {
+    width: 33%;
+    padding: 25px;
+}
+.brodos-hero-banner-top-wrap-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.brodos_info_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    height: 100%;
+}
+
+.brodos_info_wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 20px 20px 60px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+.brodos_info_icon {
+    position: absolute;
+    width: 30px;
+    left: 15px;
+    top: calc(50% - 15px);
+}
+
+.brodos_info_icon svg {
+    width: 30px;
+    height: 30px;
+}
+
+.brodos_info_icon svg path {
+    fill: #F42C37;
+}
+
+.brodos_info_wrap_inner {
+    color: #3D3D3D;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.brodos_info_wrap_inner a {
+    color: #3D3D3D;
+}
+
+.brodos_info_wrap_inner p {
+    margin-bottom: 0;
+}
+
+.brodos_info_wrap_inner b,
+.brodos_info_wrap_inner strong {
+    font-weight: 800;
+}
+
+.brodos-hero-banner-bottom-wrap {
+    background-color: rgb(219 219 219 / 50%);
+    border-radius: 0 0 22px 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.brodos-hero-banner-bottom-left-wrapper {
+    width: 33%;
+}
+
+.brodos-team-image {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    border-radius: 0 22px 0;
+    overflow: hidden;
+}
+
+.brodos-team-image img {
+    max-width: 90% !important;
+}
+
+.brodos-about-link {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 19px;
+    letter-spacing: -0.5px;
+    padding: 010px 30px 10px 30px;
+    background-color: #F42C37;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+    color: #fff;
+    border-radius: 100em;
+    position: absolute;
+    bottom: 15px;
+    z-index: 1;
+}
+
+.brodos-about-link:hover {
+    color: #fff;
+    background-color: black;
+}
+
+.brodos-hero-banner-bottom-right-wrapper {
+    width: 67%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.brodos-general-service-link,
+.brodos-service-link {
+    font-family: "Poppins", Sans-serif;
+    color: #000;
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 68px;
+    letter-spacing: 0px;
+    text-decoration: underline !important;
+    text-decoration-color: transparent !important;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+.brodos-general-service-link:hover,
+.brodos-service-link:hover {
+    color: #000;
+    text-decoration-color: #F42C37 !important;
+}
+
+.brodos-hero-banner-bottom-right-bottom-wrap .brodos-service-link-wrap {
+    text-align: right;
+}
+
+.brodos-banner-service {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    text-align: left;
+    align-items: center;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.brodos-banner-service li {
+    min-width: 30%;
+    margin-right: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.brodos-banner-service li a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.8em;
+    margin: 0px 0px 0px 0px;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+    color: #444;
+}
+
+.brodos-banner-service li a svg {
+    width: 16px;
+    vertical-align: inherit;
+    height: 20px;
+    margin-right: 6px;
+}
+
+.brodos-banner-service li a svg path {
+    fill: #F42C37;
+}
+
+.brodos-banner-service li a span {}
+
+.brodos-banner-service li a:hover {
+    color: #F42C37;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .brodos-general-service-link,
+    .brodos-service-link {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .brodos-banner-service li a {
+        font-size: 1.25rem;
+        line-height: 1.5em;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+
+    .brodos-hero-banner-top-wrap {
+        flex-direction: row;
+    }
+
+    .brodos-hero-banner-bottom-left-wrapper {
+        width: 40%;
+    }
+
+    .brodos-hero-banner-bottom-right-wrapper {
+        width: 60%;
+        padding: 0 15px;
+    }
+
+    .brodos-banner-service li {
+        min-width: 50%;
+    }
+
+    .brodos-hero-banner-top-right-wrapper {
+        width: 300px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .brodos-hero-banner-bottom-wrap {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .brodos-hero-banner-bottom-left-wrapper,
+    .brodos-hero-banner-bottom-right-wrapper {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .brodos-hero-banner-top-right-wrapper {
+        display: none;
+    }
+
+    .brodos-banner-service li {
+        min-width: 100%;
+    }
+}
